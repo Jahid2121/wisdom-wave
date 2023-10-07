@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import logo from '../../assets/icons8-education-100.png'
 const Navbar = () => {
     const navLinks = <>
     <li><NavLink to="/" style={({ isActive, isPending }) => {
@@ -40,6 +40,7 @@ const Navbar = () => {
 
       </ul>
     </div>
+    <img className="w-2/6" src={logo} alt="" /> 
     <a className="btn btn-ghost normal-case text-xl">WisdomWave</a>
   </div>
   <div className="navbar-center hidden lg:flex">
