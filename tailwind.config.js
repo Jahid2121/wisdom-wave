@@ -7,6 +7,9 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
+        fontFamily: {
+        Roboto  : "'Roboto', sans-serif", 
+        },
         'custom-yellow': '#FFBE30'
       },
       textColor: {
