@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Career Fairs",
-        "image": "career-fairs.jpg",
+        "image": "https://i.ibb.co/5RTPS24/teemu-paananen-bzdhc5b3-Bxs-unsplash.jpg",
         "price": "Free",
         "description": "Attend our career fair to enhance your job prospects. Meet with potential employers, participate in workshops, and network with industry professionals.",
         "schedule": "Upcoming Career Fair: December 5, 2023, 2:00 PM - 5:00 PM",
@@ -18,7 +18,7 @@
     {
         "id": 2,
         "name": "Educational Conferences",
-        "image": "education-conferences.jpg",
+        "image": "https://i.ibb.co/Rh4j7BL/product-school-cd7i9v-YIye-Y-unsplash.jpg",
         "price": "$75 - $250",
         "description": "Participate in our educational conferences to explore the latest trends in education, engage with renowned educators, and attend insightful sessions and panel discussions.",
         "schedule": "Next Conference: January 10, 2024, 9:30 AM - 3:30 PM",
@@ -34,7 +34,7 @@
     {
         "id": 3,
         "name": "Training Programs",
-        "image": "training-programs.jpg",
+        "image": "https://i.ibb.co/j8nWcKx/matthew-osborn-w-MRIc-T86-SWU-unsplash.jpg",
         "price": "$100 - $300",
         "description": "Enhance your skills through our specialized training programs. Participate in hands-on workshops, learn from industry experts, and gain valuable insights to advance your career.",
         "schedule": "Upcoming Programs: March 15-17, 2024, 9:00 AM - 6:00 PM",
@@ -50,7 +50,7 @@
     {
         "id": 4,
         "name": "Photography Workshop",
-        "image": "photography-workshop.jpg",
+        "image": "https://i.ibb.co/wz6kFFh/alif-ngoylung-jg-6-ARMia-PM-unsplash.jpg",
         "price": "$80 - $250",
         "description": "Master the art of photography at our workshop. Receive hands-on training, learn photo editing tips, and explore creative photography techniques.",
         "schedule": "Next Workshop: April 5, 2024, 10:00 AM - 4:00 PM",
@@ -66,7 +66,7 @@
     {
         "id": 5,
         "name": "Workshops and Webinars",
-        "image": "workshops.jpg",
+        "image": "https://i.ibb.co/brTM6xG/chuttersnap-c-X2v-El-Q5a-Hk-unsplash.jpg",
         "price": "$50 - $200",
         "description": "Engage in interactive workshops and webinars conducted by experts in various fields. Learn new skills and interact with industry professionals.",
         "schedule": "Next Workshop: November 15, 2023, 10:00 AM - 4:00 PM",
@@ -82,7 +82,7 @@
     {
         "id": 6,
         "name": "Language Learning Webinar",
-        "image": "language-webinar.jpg",
+        "image": "https://i.ibb.co/HNRrLYb/kane-reinholdtsen-LETdkk7w-HQk-unsplash.jpg",
         "price": "Free",
         "description": "Immerse yourself in language learning. Interactive sessions with native speakers and language enthusiasts.",
         "schedule": "Upcoming Webinar: February 20, 2024, 6:00 PM - 8:00 PM",
