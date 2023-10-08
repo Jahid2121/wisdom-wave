@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/icons8-education-100.png'
 const Navbar = () => {
     const navLinks = <>
@@ -52,12 +52,29 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  <div className="w-10 rounded-full">
-          <img src="/" />
-        </div>
+  <Link to="/login"><button className="bg-orange-400 btn text-white">Login</button></Link>
   </div>
 </div>
     );
 };
 
 export default Navbar;
+
+
+{/* <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" />
+        </div>
+      </label>
+      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+        <li>
+          <a className="justify-between">
+            Profile
+            <span className="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div> */}

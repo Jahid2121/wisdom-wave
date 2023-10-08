@@ -6,10 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+      Roboto  : "'Roboto', sans-serif", 
+      Lato  : "'Lato', sans-serif", 
+      },
       backgroundColor: {
-        fontFamily: {
-        Roboto  : "'Roboto', sans-serif", 
-        },
         'custom-yellow': '#FFBE30'
       },
       textColor: {
