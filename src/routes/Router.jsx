@@ -3,6 +3,7 @@ import Root from "../layout/Root";
 import Home from "../pages/Home/Home";
 import Blog from "../pages/Blog/Blog";
 import Speaker from "../pages/Speaker/Speaker";
+import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
       {
         path: "/speaker",
         element: <Speaker></Speaker>
+      },
+      {
+        path: "/service/:id",
+        element: <ServiceDetails></ServiceDetails>,
+        loader: () => fetch('/services.json')
       },
     ],
   },

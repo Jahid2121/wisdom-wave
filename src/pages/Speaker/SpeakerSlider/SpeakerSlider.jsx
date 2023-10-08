@@ -18,7 +18,7 @@ const SpeakerSlider = () => {
       <SwiperSlide>
         <div>
           <img
-            className=" mx-auto border rounded-xl border-4 border-orange-500"
+            className=" mx-auto  rounded-xl border-4 border-orange-500"
             src={
               "https://i.ibb.co/Rh4j7BL/product-school-cd7i9v-YIye-Y-unsplash.jpg"
             }
@@ -28,7 +28,7 @@ const SpeakerSlider = () => {
       <SwiperSlide>
         <div>
           <img
-            className=" mx-auto border rounded-xl border-4 border-orange-500"
+            className=" mx-auto  rounded-xl border-4 border-orange-500"
             src={
               "https://i.ibb.co/Rh4j7BL/product-school-cd7i9v-YIye-Y-unsplash.jpg"
             }
@@ -38,7 +38,7 @@ const SpeakerSlider = () => {
       <SwiperSlide>
         <div>
           <img
-            className=" mx-auto border rounded-xl border-4 border-orange-500"
+            className=" mx-auto  rounded-xl border-4 border-orange-500"
             src={
               "https://i.ibb.co/Rh4j7BL/product-school-cd7i9v-YIye-Y-unsplash.jpg"
             }

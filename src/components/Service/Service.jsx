@@ -1,6 +1,9 @@
+import { Link, useNavigate } from "react-router-dom";
 
 const Service = ({service}) => {
-    const {name, image, price, ShortDescription } = service
+    const {id, name, image, price, ShortDescription } = service
+
+
     return (
         <div className="border hover:border-yellow-500 flex flex-col bg-blend-overlay w-[310px]">
             <img className="w-full h-56" src={image} alt="" />
@@ -13,7 +16,7 @@ const Service = ({service}) => {
             </div>
             </div>
             <p className="text-left pl-3 flex-grow">{ShortDescription}</p>
-            <button className="btn my-3 hover:text-white text-gray-600  hover:bg-gradient-to-br from-[#FF3E00] to-[#FFBE30]">Click to see details</button>
+            <Link to={`/service/${id}`}><button  className="btn my-3 hover:text-white text-gray-600  hover:bg-gradient-to-br from-[#FF3E00] to-[#FFBE30]">Click to see details</button></Link>
         </div>
     );
 };
