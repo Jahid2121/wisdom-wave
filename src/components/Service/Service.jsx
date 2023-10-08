@@ -13,7 +13,7 @@ const Service = ({service}) => {
             </div>
             </div>
             <p className="text-left pl-3 flex-grow">{ShortDescription}</p>
-            <button className="btn my-3 hover:text-white  hover:bg-gradient-to-br from-[#FF3E00] to-[#FFBE30]">Click to see details</button>
+            <button className="btn my-3 hover:text-white text-gray-600  hover:bg-gradient-to-br from-[#FF3E00] to-[#FFBE30]">Click to see details</button>
         </div>
     );
 };
