@@ -8,7 +8,10 @@ const ServiceDetails = () => {
     const services = useLoaderData()
     const service = services?.map(service => service)
     const event = service?.find(data => data.id === idInt )
-    const { name, image, price, DetailedDescription } = event
+    const { name, benefits,process, testimonials,image, price, DetailedDescription } = event
+    const User = testimonials?.map(testimonial => testimonial.user)
+    const Quote = testimonials?.map(testimonial => testimonial.comment)
+
     return (
         <div>
             <Navbar></Navbar>
@@ -17,24 +20,26 @@ const ServiceDetails = () => {
             <h3 className="text-4xl my-6 font-bold">About Our {name}</h3>
             <p className="text-left">{DetailedDescription}</p>
 
-            <h3 className="text-4xl bg-custom-Pink my-4 font-medium text-left">Benifits</h3>
+            <h3 className="text-4xl bg-custom-Pink my-4 font-medium text-center">Benefits</h3>
             <ul>
-                <li>benifit</li>
-                <li>2</li>
-                <li>3</li>
+                {
+                    benefits?.map((benefit,idx) => <li key={idx}>{benefit}</li>)
+
+                }
+                
             </ul>
 
-            <h3 className="text-4xl my-4 font-medium text-left">Process</h3>
+            <h3 className="text-4xl my-4 font-medium bg-custom-Pink text-center">Process</h3>
             <ol>
-                <li>id 1</li>
-                <li>id 2</li>
-                <li>id 3</li>
-                <li>id 4</li>
+                {
+                    process?.map((singleProcess, idx) => <li key={idx}>{singleProcess}</li>)
+                }
             </ol>
 
-            <h2 className="text-4xl my-4 font-medium text-left">Client Testimonials</h2>
-            <blockquote>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quaerat nisi, sit minima repudiandae aut facilis iusto expedita quibusdam consequatur quia iure atque harum, ullam omnis neque fugiat aliquid laborum.
+            <h2 className="text-4xl my-4 font-medium text-center bg-custom-Pink">Client Testimonials</h2>
+            <h3 className="text-3xl font-medium">{User}</h3>
+            <blockquote className="font-bold">
+               {Quote}
             </blockquote>
 
             <h className="text-4xl my-4 font-medium text-left">Pricing</h>
