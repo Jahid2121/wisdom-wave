@@ -2,6 +2,11 @@ import '../Register/Register.css'
 const Register = () => {
     const handleRegistration = e => {
         e.preventDefault()
+        const name = e.target.name.value
+        const photo = e.target.photo.value
+        const email = e.target.email.value
+        const password = e.target.password.value
+        console.log(name, photo, email, password);
     }
     return (
         <div className='register-bg lg:min-h-screen p-3' style={{minHeight: 'calc(100vh - 64px)'}}>
@@ -13,22 +18,22 @@ const Register = () => {
           <label className="label ">
             <span className="label-text font-bold">Name</span>
           </label>
-          <input  type="text" placeholder="Name" className="input bg-gray-100  text-gray-700 rounded-full" required />
+          <input  type="text" name='name' placeholder="Name" className="input bg-gray-100  text-gray-700 rounded-full" required />
 
           <label className="label ">
             <span className="label-text font-bold">Photo</span>
           </label>
-          <input  type="text" placeholder="Photo URL" className="input bg-gray-100  text-gray-700 rounded-full" required />
+          <input  type="text" name='photo' placeholder="Photo URL" className="input bg-gray-100  text-gray-700 rounded-full" required />
           <label className="label ">
             <span className="label-text font-bold">Email</span>
           </label>
-          <input  type="email" placeholder="email" className="input bg-gray-100  text-gray-700 rounded-full" required />
+          <input  type="email" name='email' placeholder="email" className="input bg-gray-100  text-gray-700 rounded-full" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text font-bold">Password</span>
           </label>
-          <input  type="password" placeholder="password" className="input bg-gray-100 text-gray-700 rounded-full" required />
+          <input  type="password" name='password' placeholder="password" className="input bg-gray-100 text-gray-700 rounded-full" required />
           
         </div>
         <div className="form-control mt-6">

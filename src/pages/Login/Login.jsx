@@ -2,24 +2,30 @@
 import { Link } from 'react-router-dom';
 import '../Login/Login.css'
 const Login = () => {
+    const handleSignIn = e => {
+        e.preventDefault()
+        const email = e.target.email.value
+        const password = e.target.password.value
+        console.log( email, password);
+    }
     return (
         <div className='flex  justify-center mt-14 font-Lato'>
 
     
     <div className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
         <h2 className='text-left text-4xl mt-8 ml-9 font-light'>Sign In</h2>
-      <form className="card-body">
+      <form onSubmit={handleSignIn} className="card-body">
         <div className="form-control">
           <label className="label ">
             <span className="label-text text-lg font-bold">Email</span>
           </label>
-          <input  type="email" placeholder="email" className="input bg-gray-100  text-gray-700 rounded-full" required />
+          <input  type="email" name='email' placeholder="email" className="input bg-gray-100  text-gray-700 rounded-full" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text text-lg font-bold">Password</span>
           </label>
-          <input  type="password" placeholder="password" className="input bg-gray-100 text-gray-700 rounded-full" required />
+          <input  type="password" name='password' placeholder="password" className="input bg-gray-100 text-gray-700 rounded-full" required />
           
         </div>
         <div className="form-control mt-6">
