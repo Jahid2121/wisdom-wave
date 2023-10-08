@@ -1,63 +1,153 @@
 [
-  {
-    "id": 1,
-    "name": "Career Fairs",
-    "image": "https://i.ibb.co/5RTPS24/teemu-paananen-bzdhc5b3-Bxs-unsplash.jpg",
-    "price": "Free",
-    "ShortDescription": "Meet potential employers, attend workshops, and network at our career fair to enhance your job prospects.",
-    "DetailedDescription": "Join our Career Fair to boost your job opportunities. Engage with a wide array of potential employers, participate in hands-on workshops to enhance your skills, and network with industry professionals. This event provides a unique platform to explore job openings, learn about different career example.com/career-fair-registration"
-    
-    
-  },
-  {
-    "id": 2,
-    "name": "Educational Conferences",
-    "image": "https://i.ibb.co/Rh4j7BL/product-school-cd7i9v-YIye-Y-unsplash.jpg",
-    "price": "$75 - $250",
-    "ShortDescription": "Explore education trends, engage with educators, and attend insightful sessions at our conferences.",
-    "DetailedDescription": "Participate in our Educational Conferences to delve into the latest trends in education. Connect with renowned educators, engage in thought-provoking panel discussions, and attend sessions that offer valuable insights into the evolving landscape of education. Whether you're an educator, student, or education enthusiast, this conference provides a rich learning experience "
-    
-    
-  },
-  {
-    "id": 3,
-    "name": "Training Programs",
-    "image": "https://i.ibb.co/j8nWcKx/matthew-osborn-w-MRIc-T86-SWU-unsplash.jpg",
-    "price": "$100 - $300",
-    "ShortDescription": "Advance your skills through specialized training programs with industry experts.",
-    "DetailedDescription": "Enhance your skills and expertise through our intensive Training Programs. Led by industry experts, these programs offer hands-on workshops, in-depth training sessions, and valuable insights that will empower you in your career. Whether you're looking to upskill, switch careers, or stay updated with the latest industry practices, our Training Programs are tailored to meet your professional needs."
-    
-    
-    
-  },
-  {
-    "id": 4,
-    "name": "Photography Workshop",
-    "image": "https://i.ibb.co/wz6kFFh/alif-ngoylung-jg-6-ARMia-PM-unsplash.jpg",
-    "price": "$80 - $250",
-    "ShortDescription": "Master photography techniques through hands-on training and creative exploration.",
-    "DetailedDescription": "Immerse yourself in the art of photography at our comprehensive Photography Workshop. Led by professional photographers, this workshop offers hands-on training, advanced photography techniques, and expert guidance on photo editing. Whether you're a beginner looking to grasp the basics or an experienced photographer aiming to refine your skills, this workshop provides a nurturing environment for creative exploration and skill. "
-    
-    
-  },
-  {
-    "id": 5,
-    "name": "Workshops and Webinars",
-    "image": "https://i.ibb.co/brTM6xG/chuttersnap-c-X2v-El-Q5a-Hk-unsplash.jpg",
-    "price": "$50 - $200",
-    "ShortDescription": "Participate in interactive workshops and webinars led by industry experts.",
-    "DetailedDescription": "Engage in our interactive Workshops and Webinars conducted by experts in diverse fields. These sessions cover a wide range of topics, offering participants the opportunity to learn new skills, gain valuable insights, and interact with industry professionals. Whether you're interested in technology, business, arts, or personal development, our workshops and webinars example.com/workshop-registration. "
-    
-    
-  },
-  {
-    "id": 6,
-    "name": "Language Learning Webinar",
-    "image": "https://i.ibb.co/HNRrLYb/kane-reinholdtsen-LETdkk7w-HQk-unsplash.jpg",
-    "price": "Free",
-    "ShortDescription": "Immerse in language learning through interactive sessions with native speakers.",
-    "DetailedDescription": "Embark on a language learning journey with our Language Learning Webinar. Led by native speakers and language enthusiasts, this webinar offers interactive sessions, language immersion activities, and cultural insights. Whether you're a beginner learning a new language or an enthusiast looking to enhance your language skills, this webinar provides a dynamic and engaging environment to foster language proficiency and cultural understanding. Join us for an enriching experience that transcends. "
-    
-    
-  }
-]
+    {
+      "id": 1,
+      "name": "Career Fairs",
+      "image": "https://i.ibb.co/5RTPS24/teemu-paananen-bzdhc5b3-Bxs-unsplash.jpg",
+      "price": "Free",
+      "ShortDescription": "Meet potential employers, attend workshops, and network at our career fair to enhance your job prospects.",
+      "DetailedDescription": "Join our Career Fair to boost your job opportunities. Engage with a wide array of potential employers, participate in hands-on workshops to enhance your skills, and network with industry professionals. This event provides a unique platform to explore job openings and learn about different career paths. Register at example.com/career-fair-registration",
+      "benefits": [
+        "Meet potential employers from various industries",
+        "Participate in hands-on workshops to enhance your skills",
+        "Network with industry professionals and experts"
+      ],
+      "process": [
+        "Register for the Career Fair on our website",
+        "Attend opening keynote and introduction session",
+        "Participate in industry-specific workshops and seminars",
+        "Engage with potential employers at the networking sessions"
+      ],
+      "testimonials": [
+        {
+          "user": "Sarah Johnson",
+          "comment": "Attending the Career Fair was a game-changer for me. I not only found job opportunities but also gained valuable insights from the workshops. The networking sessions were incredibly helpful, and I ended up securing a job with a company I met at the event. Thank you for this fantastic opportunity!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Educational Conferences",
+      "image": "https://i.ibb.co/Rh4j7BL/product-school-cd7i9v-YIye-Y-unsplash.jpg",
+      "price": "$75 - $250",
+      "ShortDescription": "Explore education trends, engage with educators, and attend insightful sessions at our conferences.",
+      "DetailedDescription": "Participate in our Educational Conferences to delve into the latest trends in education. Connect with renowned educators, engage in thought-provoking panel discussions, and attend sessions that offer valuable insights into the evolving landscape of education. Whether you're an educator, student, or education enthusiast, this conference provides a rich learning experience.",
+      "benefits": [
+        "Gain insights into the latest educational trends",
+        "Engage with renowned educators and experts",
+        "Attend sessions offering valuable educational perspectives"
+      ],
+      "process": [
+        "Register for the conference online",
+        "Attend keynote speeches and panel discussions",
+        "Participate in specialized breakout sessions",
+        "Network with fellow educators and attendees"
+      ],
+      "testimonials": [
+        {
+          "user": "Michael Lee",
+          "comment": "The Educational Conference was incredibly informative. The speakers were knowledgeable, and I learned a lot from the discussions. The networking opportunities were abundant, and I made valuable connections within the education community. I highly recommend this conference to anyone passionate about education."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Training Programs",
+      "image": "https://i.ibb.co/j8nWcKx/matthew-osborn-w-MRIc-T86-SWU-unsplash.jpg",
+      "price": "$100 - $300",
+      "ShortDescription": "Advance your skills through specialized training programs with industry experts.",
+      "DetailedDescription": "Enhance your skills and expertise through our intensive Training Programs. Led by industry experts, these programs offer hands-on workshops, in-depth training sessions, and valuable insights that will empower you in your career. Whether you're looking to upskill, switch careers, or stay updated with the latest industry practices, our Training Programs are tailored to meet your professional needs.",
+      "benefits": [
+        "Hands-on training with industry experts",
+        "In-depth sessions covering advanced topics",
+        "Valuable insights for career empowerment"
+      ],
+      "process": [
+        "Browse available training programs and select one based on your interests",
+        "Attend workshops led by experienced industry professionals",
+        "Participate in interactive discussions and Q&A sessions",
+        "Receive a certificate upon completion of the program"
+      ],
+      "testimonials": [
+        {
+          "user": "Emma Martinez",
+          "comment": "I enrolled in a Training Program, and it exceeded my expectations. The trainers were experts in their fields, and the content was both comprehensive and practical. I gained new skills and knowledge that directly impacted my job performance. I highly recommend these programs to anyone looking to enhance their skills."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Photography Workshop",
+      "image": "https://i.ibb.co/wz6kFFh/alif-ngoylung-jg-6-ARMia-PM-unsplash.jpg",
+      "price": "$80 - $250",
+      "ShortDescription": "Master photography techniques through hands-on training and creative exploration.",
+      "DetailedDescription": "Immerse yourself in the art of photography at our comprehensive Photography Workshop. Led by professional photographers, this workshop offers hands-on training, advanced photography techniques, and expert guidance on photo editing. Whether you're a beginner looking to grasp the basics or an experienced photographer aiming to refine your skills, this workshop provides a nurturing environment for creative exploration and skill development.",
+      "benefits": [
+        "Hands-on training with professional photographers",
+        "Learn advanced photography techniques and editing skills",
+        "Creative exploration and skill development"
+      ],
+      "process": [
+        "Register for the workshop and secure your spot",
+        "Attend lectures on photography basics and advanced techniques",
+        "Participate in practical sessions and photo editing workshops",
+        "Receive feedback from instructors to improve your skills"
+      ],
+      "testimonials": [
+        {
+          "user": "David Thompson",
+          "comment": "I've been passionate about photography for years, and this workshop took my skills to the next level. The hands-on approach and personalized feedback from the instructors were invaluable. I left the workshop with newfound confidence in my photography abilities. Thank you for this enriching experience!"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Workshops and Webinars",
+      "image": "https://i.ibb.co/brTM6xG/chuttersnap-c-X2v-El-Q5a-Hk-unsplash.jpg",
+      "price": "$50 - $200",
+      "ShortDescription": "Participate in interactive workshops and webinars led by industry experts.",
+      "DetailedDescription": "Engage in our interactive Workshops and Webinars conducted by experts in diverse fields. These sessions cover a wide range of topics, offering participants the opportunity to learn new skills, gain valuable insights, and interact with industry professionals. Whether you're interested in technology, business, arts, or personal development, our workshops and webinars cater to your interests and provide a platform for continuous learning.",
+      "benefits": [
+        "Interactive sessions with industry experts",
+        "Learn new skills and gain valuable insights",
+        "Opportunity to network with professionals in your field"
+      ],
+      "process": [
+        "Browse the workshop/webinar schedule and choose sessions of interest",
+        "Participate in live interactive sessions with experts",
+        "Engage in Q&A sessions and discussions",
+        "Access session recordings for future reference"
+      ],
+      "testimonials": [
+        {
+          "user": "Linda Chang",
+          "comment": "I've attended several workshops and webinars through this platform, and I'm always impressed with the quality of content and the expertise of the presenters. The interactive format allows for meaningful engagement, and I've learned practical skills that I've implemented in my work. I highly recommend these sessions to anyone looking to expand their knowledge."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Language Learning Webinar",
+      "image": "https://i.ibb.co/HNRrLYb/kane-reinholdtsen-LETdkk7w-HQk-unsplash.jpg",
+      "price": "Free",
+      "ShortDescription": "Immerse in language learning through interactive sessions with native speakers.",
+      "DetailedDescription": "Embark on a language learning journey with our Language Learning Webinar. Led by native speakers and language enthusiasts, this webinar offers interactive sessions, language immersion activities, and cultural insights. Whether you're a beginner learning a new language or an enthusiast looking to enhance your language skills, this webinar provides a dynamic and engaging environment to foster language proficiency and cultural understanding. Join us for an enriching experience that transcends traditional language learning methods.",
+      "benefits": [
+        "Interactive language learning sessions with native speakers",
+        "Engaging language immersion activities",
+        "Cultural insights for a comprehensive understanding"
+      ],
+      "process": [
+        "Register for the language learning webinar series",
+        "Participate in interactive language sessions with native speakers",
+        "Engage in cultural immersion activities and discussions",
+        "Receive personalized feedback and language learning resources"
+      ],
+      "testimonials": [
+        {
+          "user": "Carlos Rodriguez",
+          "comment": "I've always wanted to learn a new language, and this webinar series made the process enjoyable and effective. The interactive sessions with native speakers were incredibly helpful, and I appreciated the cultural insights shared during the program. I now have a strong foundation in the language and a deeper understanding of the culture. Gracias for this fantastic opportunity!"
+        }
+      ]
+    }
+  ]
+  

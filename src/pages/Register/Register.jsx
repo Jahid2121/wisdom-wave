@@ -7,11 +7,19 @@ const Register = () => {
 
     const handleRegistration = e => {
         e.preventDefault()
-        const name = e.target.name.value
-        const photo = e.target.photo.value
+        const displayName = e.target.displayName.value
+        const photoURL = e.target.photoURL.value
         const email = e.target.email.value
         const password = e.target.password.value
-        console.log(name, photo, email, password);
+        console.log(displayName , email, password);
+
+        createUser(displayName,photoURL, email, password)
+        .then(result => {
+            console.log(result.user);
+        })
+        .catch(error => {
+            console.error(error.message);
+        })
     }
     return (
         <div className='register-bg lg:min-h-screen p-3' style={{minHeight: 'calc(100vh - 64px)'}}>
@@ -23,12 +31,12 @@ const Register = () => {
           <label className="label ">
             <span className="label-text font-bold">Name</span>
           </label>
-          <input  type="text" name='name' placeholder="Name" className="input bg-gray-100  text-gray-700 rounded-full" required />
+          <input  type="text" name='displayName' placeholder="Name" className="input bg-gray-100  text-gray-700 rounded-full" required />
 
           <label className="label ">
             <span className="label-text font-bold">Photo</span>
           </label>
-          <input  type="text" name='photo' placeholder="Photo URL" className="input bg-gray-100  text-gray-700 rounded-full" required />
+          <input  type="text" name='photoURL' placeholder="Photo URL" className="input bg-gray-100  text-gray-700 rounded-full" required />
           <label className="label ">
             <span className="label-text font-bold">Email</span>
           </label>

@@ -19,13 +19,13 @@ const Login = () => {
           <label className="label ">
             <span className="label-text text-lg font-bold">Email</span>
           </label>
-          <input  type="email" name='email' placeholder="email" className="input bg-gray-100  text-gray-700 rounded-full" required />
+          <input  type="email" name='email' placeholder="email" className="input bg-gray-100 text-black  focus:text-gray-700 rounded-full" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text text-lg font-bold">Password</span>
           </label>
-          <input  type="password" name='password' placeholder="password" className="input bg-gray-100 text-gray-700 rounded-full" required />
+          <input  type="password" name='password' placeholder="password" className="input bg-gray-100 text-black focus:text-gray-700 rounded-full" required />
           
         </div>
         <div className="form-control mt-6">

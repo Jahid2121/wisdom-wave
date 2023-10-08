@@ -17,7 +17,7 @@ const ServiceDetails = () => {
             <h3 className="text-4xl my-6 font-bold">About Our {name}</h3>
             <p className="text-left">{DetailedDescription}</p>
 
-            <h3 className="text-4xl my-4 font-medium text-left">Benifits</h3>
+            <h3 className="text-4xl bg-custom-Pink my-4 font-medium text-left">Benifits</h3>
             <ul>
                 <li>benifit</li>
                 <li>2</li>

@@ -19,8 +19,8 @@ const AuthProvider = ({children}) => {
         }
     },[])
 
-    const createUser = (email, password) => {
-        return createUserWithEmailAndPassword(auth,email, password)
+    const createUser = (displayName,photoURL, email, password) => {
+        return createUserWithEmailAndPassword(auth,displayName,photoURL, email, password)
     }
 
 

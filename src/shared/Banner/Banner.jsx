@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="banner flex text-center flex-col justify-center">
          <h1 className='text-6xl text-white mb-2'>Welcome to <span className='text-orange-500 font-bold'>WisdomWave</span></h1>
         <p className='text-2xl text-white mb-4'>Empowering Minds, Inspiring Futures</p>
-        <button className="btn mx-auto bg-orange-500 border-0 text-white ">Learn More</button>
+        <button className="btn mx-auto bg-orange-500 border-0 text-white ">More About Us</button>
     </div>
   );
 };
