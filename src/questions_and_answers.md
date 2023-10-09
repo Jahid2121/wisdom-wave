@@ -18,9 +18,10 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`
 
-<i>Write your explanation here</i>
+
+<i>In here a variable declared name `greeting` and a value passed to it in the second line.Which is an empty object. If I console.log this variable it will give an empty array because the array was declared but not a single value passed to it.Thus.</i>
 
 </p>
 </details>
@@ -43,9 +44,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: "12"
 
-<i>Write your explanation here</i>
+<i>This is called string concatination. In the sum function 1 is a number and 3 is not a number, it is string. And js doesn't do sum between a string and a number but concatinate two into one.</i>
 
 </p>
 </details>
@@ -69,9 +70,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:  A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i> info.favourite  doesn't change the original array and at the last line console.log(food) which is the variable which was declared at the first line. Thus it will give output same as before</i>
 
 </p>
 </details>
@@ -94,9 +95,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>sayHi function called at the last line. But no parameter was sent.Therefore, if no value pass it will give undefined</i>
 
 </p>
 </details>
@@ -122,9 +123,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:  C: 3
 
-<i>Write your explanation here</i>
+<i>nums.forEach loops through the array and give a single object. if statement checks wheter the number is thruth or falsy . While 0 comes first, as it is falsy value it will not go inside the condition. All other number will go inside the condition and trigerred the count with a n increasing value by 1. As there is total 3 numbers left The answer will be 3</i>
 
 </p>
 </details>
