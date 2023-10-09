@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import '../Register/Register.css'
 import { AuthContext } from '../../Provider/AuthProvider';
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye,FaExclamationCircle, FaEyeSlash } from "react-icons/fa";
 import { updateProfile } from 'firebase/auth';
 const Register = () => {
     const {createUser} = useContext(AuthContext)
@@ -19,6 +19,10 @@ const Register = () => {
         const password = e.target.password.value
         console.log(displayName , email, password);
 
+
+        setError('')
+        setSuccess('')
+
         if(password.length < 6){
           setError('password must be at least 6 characters')
         return
@@ -32,6 +36,7 @@ const Register = () => {
         createUser( email, password)
         .then(result => {
             console.log(result.user);
+            setSuccess('User Created Successfully')
 
             updateProfile(result.user, {
               displayName: displayName,
@@ -40,6 +45,7 @@ const Register = () => {
         })
         .catch(error => {
             console.error(error.message);
+            setError(error.message)
         })
     }
     return (
@@ -77,10 +83,17 @@ const Register = () => {
           </div>
           
         </div>
+        {
+        error && <p className='text-red-950 flex items-center'><FaExclamationCircle/>{error}</p>
+      }
+      {
+        success && <p className='text-green-800'>{success}</p>
+      }
         <div className="form-control mt-6">
           <button className="btn rounded-full bg-orange-400 text-white ">Sign Up</button>
         </div>
       </form>
+      
     </div>
        
     </div>
