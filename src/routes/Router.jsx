@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import Root from "../layout/Root";
 import Home from "../pages/Home/Home";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
@@ -16,9 +16,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Navigate to="/home" replace />, 
+        loader: () => fetch('/services.json')
+      },
+      {
+        path: "/home",
         element: <Home></Home>,
         loader: () => fetch('/services.json')
       },
+
       {
         path: "/login",
         element: <Login></Login>,

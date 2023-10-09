@@ -4,7 +4,32 @@ import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 
+const Menus = ()  => {
+  const links = ['home', 'events', 'contact', 'about']
+  return (
+    <>
+    
+    {
+      links.map(link => <li key={link}>
+        <NavLink  style={({ isActive }) => {
+    return {
+      fontWeight: isActive ? "bold" : "",
+      color: isActive ? "orange" : "",
+      textDecoration: isActive ? "underline" : "",
+    };
+  }} to={`/${link}`}>{link}</NavLink>
+      </li>)
+    }
+    </>
+  )
+}
+
+
 const Navbar = ({services}) => {
+ 
+
+
+
   const {user, logOut} = useContext(AuthContext)
 
   const handleLogOut = () => {
@@ -16,50 +41,7 @@ const Navbar = ({services}) => {
       console.error(error);
     })
   }
-    const navLinks = <>
-    <li className="mr-4 text-xl"><NavLink to="/" style={({ isActive }) => {
-    return {
-      fontWeight: isActive ? "bold" : "",
-      color: isActive ? "orange" : "",
-      textDecoration: isActive ? "underline" : "",
-    };
-  }}>Home</NavLink></li>
-      <li className="mr-4 text-xl" tabIndex={0}>
-        <details>
-          <summary>Services</summary>
-          <ul>
-          {
-            services?.map(service =>   
-              <li className="hover:bg-yellow-400 mb-1" key={service.id}><NavLink to={`/service/${service.id}`} >{service.name}</NavLink></li>
-            )
-          }
-          </ul>
-          
-        </details>
-      </li>
-      <li  className="mr-4 text-xl"><NavLink to="/events" style={({ isActive }) => {
-    return {
-      fontWeight: isActive ? "bold" : "",
-      color: isActive ? "orange" : "",
-      textDecoration: isActive ? "underline" : "",
-    };
-  }}>Events</NavLink></li>
-      
-      <li className="mr-4 text-xl"><NavLink style={({ isActive, isPending }) => {
-    return {
-      fontWeight: isActive ? "bold" : "",
-      textDecoration: isActive ? "underline" : "",
-      color: isPending ? "black" : "orange",
-    };
-  }}>Contact Us</NavLink></li>
-      <li className="mr-4 text-xl"><NavLink style={({ isActive }) => {
-    return {
-      fontWeight: isActive ? "bold" : "",
-      color: isActive ? "orange" : "",
-      textDecoration: isActive ? "underline" : "",
-    };
-  }}>About Us</NavLink></li>
-    </>
+
 
 
     return (
@@ -69,10 +51,8 @@ const Navbar = ({services}) => {
     <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
-      <ul tabIndex={0} className="menu bg-orange-400 menu-sm dropdown-content mt-3 p-2  shadow bg-base-100 rounded-box w-52">
-       {
-        navLinks
-       }
+      <ul tabIndex={0} className="menu bg-orange-400 menu-sm dropdown-content mt-3 p-2  shadow  rounded-box w-52">
+       <Menus/>
 
 
       </ul>
@@ -82,9 +62,7 @@ const Navbar = ({services}) => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className=" menu-horizontal px-1">
-      {
-        navLinks
-      }
+     <Menus />
     </ul>
   </div>
   {
