@@ -5,7 +5,6 @@ import '../SpeakerSlider/slider.css'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 const Slider = ({ events }) => {
-  // const {id, eventName,date,location,,organizer } = event;
   return (
     <Swiper className="static"
       // install Swiper modules
@@ -44,10 +43,12 @@ const Slider = ({ events }) => {
               </div>
             </div>
             <p className="mx-32 text-left my-4">{event.description}</p>
+            <div className="text-center">
             <h3 className="font-medium text-sm">Organizer</h3>
             <h3 className="font-bold pb-7 mt-1 normal-case text-xl">
               Wisdom<span className="text-custom-Pink">Wave</span>
             </h3>
+            </div>
           </div>
         </SwiperSlide>
       ))}
