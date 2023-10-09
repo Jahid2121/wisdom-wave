@@ -30,7 +30,7 @@ const Navbar = ({services}) => {
 
 
 
-  const {user, logOut} = useContext(AuthContext)
+  const {user,name, email, logOut} = useContext(AuthContext)
 
   const handleLogOut = () => {
     logOut()
@@ -73,14 +73,8 @@ const Navbar = ({services}) => {
       </div>
     </label>
     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-      <li>
-        <a className="justify-between">
-          Profile
-          <span className="badge">New</span>
-        </a>
-      </li>
-      <li><a>Settings</a></li>
-      <li onClick={handleLogOut}><a>Logout</a></li>
+      <p className="bg-custom-Pink text-xl text-white rounded-t-xl p-2">{name}</p>
+      <li className="bg-custom-Pink-light text-white text-base font-medium  items-center  rounded-sm" onClick={handleLogOut}><button className="p-3">Logout</button></li>
     </ul>
   </div> 
   :

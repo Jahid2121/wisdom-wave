@@ -5,7 +5,7 @@ const Service = ({service}) => {
 
 
     return (
-        <div data-aos="flip-left" className="border shadow-xl hover:border-yellow-500 flex flex-col bg-blend-overlay w-[310px]">
+        <div className="border shadow-xl hover:border-yellow-500 flex flex-col bg-blend-overlay w-[310px]">
             <img className="w-full h-56" src={image} alt="" />
             <div className="flex mt-4">
             <div className="bg-custom-yellow h-13 w-2  "></div>
@@ -16,7 +16,7 @@ const Service = ({service}) => {
             </div>
             </div>
             <p className="text-left pl-3 flex-grow">{ShortDescription}</p>
-            <Link to={`/service/${id}`}><button  className="btn my-3 hover:text-white text-gray-600  hover:bg-gradient-to-br from-[#FF3E00] to-[#FFBE30]">Click to see details</button></Link>
+            <Link to={`/service/${id}`}><button  className="btn flex mx-auto  my-3 hover:text-white text-gray-600  hover:bg-gradient-to-br from-[#FF3E00] to-[#FFBE30]">Click to see details</button></Link>
         </div>
     );
 };

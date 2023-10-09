@@ -76,10 +76,10 @@ const Register = () => {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text font-bold">Password</span>
+            <span className="label-text  font-bold">Password</span>
           </label>
           <div className='flex static'>
-          <input   type={ShowPassword ? 'text' : "password"} name='password' placeholder="password" className="input bg-gray-100 text-gray-700 pr-14 rounded-full" required />
+          <input   type={ShowPassword ? 'text' : "password"} name='password' placeholder="password" className="input bg-gray-100 text-gray-700 pr-28 rounded-full" required />
           <span className='relative -ml-9 mt-4'  onClick={() => setShowPassword(!ShowPassword)}>
             {
               ShowPassword ? <FaEye />  : <FaEyeSlash/>
@@ -98,7 +98,7 @@ const Register = () => {
           <button className="btn rounded-full bg-orange-400 text-white ">Sign Up</button>
         </div>
       </form>
-      <p>Already have an account? <Link className='text-custom-Pink-light' to="/login">Login</Link></p>
+      <p className='mb-6 mx-auto'>Already have an account? <Link className='text-custom-Pink-light' to="/login">Login</Link></p>
       
     </div>
        
