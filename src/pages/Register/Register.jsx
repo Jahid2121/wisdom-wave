@@ -3,6 +3,7 @@ import '../Register/Register.css'
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaEye,FaExclamationCircle, FaEyeSlash } from "react-icons/fa";
 import { updateProfile } from 'firebase/auth';
+import { Link } from 'react-router-dom';
 const Register = () => {
     const {createUser} = useContext(AuthContext)
     const [success, setSuccess] = useState('')
@@ -97,6 +98,7 @@ const Register = () => {
           <button className="btn rounded-full bg-orange-400 text-white ">Sign Up</button>
         </div>
       </form>
+      <p>Already have an account? <Link className='text-custom-Pink-light' to="/login">Login</Link></p>
       
     </div>
        
