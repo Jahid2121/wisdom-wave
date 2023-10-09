@@ -11,7 +11,7 @@ const PrivateRoutes = ({children}) => {
   const location = useLocation()
   console.log(location.pathname);
   if(loading){
-   return   <span className="loading loading-bars loading-lg"></span>
+   return   <span className="loading flex my-40 mx-auto loading-bars loading-lg"></span>
   }
   else{
       if(!user){
