@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
+import Member from "./Member";
 
 const Team = () => {
     const [teamData, setTeamData] = useState([]);
@@ -12,19 +13,10 @@ const Team = () => {
 
     return (
         <div>
-            <h2 className="text-3xl text-custom-Pink">Meet Our Team</h2>
-            <Marquee gradientWidth={100}  speed={600}>
+            <h2 className="text-8xl mb-8 text-custom-Pink">Meet Our Team</h2>
+            <Marquee   speed={300}>
                 {teamData.map(member => (
-                   <div className="relative inline-block " key={member.id}>
-                    <img
-                        className="w-1/12  h-1/5"
-                        src={member.image}
-                        alt={member.name}
-                        title={`${member.name} - ${member.role}`}
-                    />
-                    <h2 className="absolute">{member.name} </h2>
-                   
-                   </div>
+                   <Member key={member.id} member={member}></Member>
                 ))}
             </Marquee>
         </div>
