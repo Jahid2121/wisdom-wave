@@ -1,12 +1,25 @@
 
 import { Link } from 'react-router-dom';
 import '../Login/Login.css'
+import { useContext } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
 const Login = () => {
+  const {googleSignIn} = useContext(AuthContext)
     const handleSignIn = e => {
         e.preventDefault()
         const email = e.target.email.value
         const password = e.target.password.value
         console.log( email, password);
+    }
+
+    const handleGoogleSignIn = () => {
+      googleSignIn()
+      .then(result => {
+        console.log(result.user);
+      })
+      .catch(error => {
+        console.error(error);
+      })
     }
     return (
         <div className='flex  justify-center mt-14 font-Lato'>
@@ -14,6 +27,7 @@ const Login = () => {
     
     <div className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
         <h2 className='text-left text-4xl mt-8 ml-9 font-light'>Sign In</h2>
+        <span onClick={handleGoogleSignIn}><button>Google</button></span>
       <form onSubmit={handleSignIn} className="card-body">
         <div className="form-control">
           <label className="label ">
@@ -32,7 +46,9 @@ const Login = () => {
           <button className="btn rounded-full bg-gradient-to-br from-[#FF3E00] to-[#FFBE30] text-white ">Sign In</button>
           <div className='flex gap-4'>
           <label className="label">
-            <a href="#" className="label-text-alt link text-lg link-hover">Remember Me</a>
+            <a href="#" className="label-text-alt link text-lg link-hover">
+              <input className='mr-1' type="checkbox" name="" id="" />
+              Remember Me</a>
           </label>
           <label className="label">
             <a href="#" className="label-text-alt link text-lg link-hover">Forgot password?</a>

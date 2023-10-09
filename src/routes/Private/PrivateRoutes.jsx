@@ -1,14 +1,16 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 
 
 const PrivateRoutes = ({children}) => {
-    const {user} = useContext(AuthContext)
-    const navigate = useNavigate()
+    const {user, loading} = useContext(AuthContext)
+    if(loading){
+      return <span className="loading flex mt-56 mx-auto loading-bars loading-lg"></span>
+    }
     if(!user){
-       return navigate('/login')
+       return <Navigate to="/login"/>
     }
     return children;
 };

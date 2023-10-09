@@ -1,6 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/icons8-education-100.png'
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { Result } from "postcss";
 const Navbar = ({services}) => {
+  const {user, logOut} = useContext(AuthContext)
+
+  const handleLogOut = () => {
+    logOut()
+    .then(Result => {
+    console.log(Result);
+    })
+    .catch(error => {
+      console.error(error);
+    })
+  }
     const navLinks = <>
     <li className="mr-4 text-xl"><NavLink to="/" style={({ isActive }) => {
     return {
@@ -19,14 +33,7 @@ const Navbar = ({services}) => {
             )
           }
           </ul>
-          {/* <ul className="p-2">
-      <li><NavLink to="/workshops-and-webinars" >Workshops and Webinars</NavLink></li>
-      <li><NavLink to="/career-development-seminar">Career Development Seminar</NavLink></li>
-      <li><NavLink to="/digital-marketing-workshop">Digital Marketing Workshop</NavLink></li>
-      <li><NavLink to="/language-learning-webinar">Language Learning Webinar</NavLink></li>
-      <li><NavLink to="/entrepreneurship-conference">Entrepreneurship Conference</NavLink></li>
-      <li><NavLink to="/photography-workshop">Photography Workshop</NavLink></li>
-    </ul> */}
+          
         </details>
       </li>
       <li  className="mr-4 text-xl"><NavLink to="/blog" style={({ isActive }) => {
@@ -83,9 +90,29 @@ const Navbar = ({services}) => {
       }
     </ul>
   </div>
+  {
+    user ?  <div className="dropdown dropdown-end">
+    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+      <div className="w-10 rounded-full">
+        <img src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" />
+      </div>
+    </label>
+    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+      <li>
+        <a className="justify-between">
+          Profile
+          <span className="badge">New</span>
+        </a>
+      </li>
+      <li><a>Settings</a></li>
+      <li onClick={handleLogOut}><a>Logout</a></li>
+    </ul>
+  </div> 
+  :
   <div className="navbar-end">
   <Link to="/login"><button className="bg-orange-400 btn text-white">Login</button></Link>
   </div>
+  }
 </div>
     );
 };
@@ -93,20 +120,3 @@ const Navbar = ({services}) => {
 export default Navbar;
 
 
-{/* <div className="dropdown dropdown-end">
-      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" />
-        </div>
-      </label>
-      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div> */}
