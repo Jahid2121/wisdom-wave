@@ -1,9 +1,13 @@
-
+import google from '../../assets/icons8-google-30.png'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../Login/Login.css'
 import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Navbar from '../../shared/Navbar/Navbar';
+import { AiOutlineGoogle } from "react-icons/ai";
+
+
+
 const Login = () => {
     <Navbar/>
   const location = useLocation()
@@ -40,8 +44,11 @@ const Login = () => {
 
     
     <div className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className='flex justify-between'>
         <h2 className='text-left text-4xl mt-8 ml-9 font-light'>Sign In</h2>
-        <span onClick={handleGoogleSignIn}><button>Google</button></span>
+        <span onClick={handleGoogleSignIn}><button className='hover:bg-custom-yellow p-3 mt-8 mr-5 border text-2xl rounded-full'><AiOutlineGoogle/> </button></span>
+        </div>
+        
       <form onSubmit={handleSignIn} className="card-body">
         <div className="form-control">
           <label className="label ">
