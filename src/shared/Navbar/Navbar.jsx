@@ -66,7 +66,7 @@ const Navbar = ({services}) => {
     </ul>
   </div>
   {
-    user ?  <div className="dropdown  pl-36 dropdown-end">
+    user ?  <div className="dropdown   pl-36 dropdown-end">
     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
       <div className="w-10 rounded-full ">
         <img className="" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" />
