@@ -1,7 +1,7 @@
 
 const Faq = () => {
     return (
-        <div className=" my-10">
+        <div data-aos="fade-up" className=" my-10">
             <h2 className="text-5xl ">FAQs</h2>
             <div className="bg-custom-orange-shade mt-2 h-2 w-52 mb-7  mx-auto ">
                 
@@ -12,7 +12,7 @@ const Faq = () => {
             <div>
    
    {/* FAQ Item 1 */}
-  <div className="collapse collapse-arrow mb-3 bg-base-200">
+  <div  className="collapse collapse-arrow mb-3 bg-base-200">
     <input type="radio" name="my-accordion-2" /> 
     <div className="collapse-title text-xl font-medium">
     What types of events does your company manage?

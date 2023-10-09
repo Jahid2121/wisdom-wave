@@ -5,7 +5,7 @@ const Service = ({service}) => {
 
 
     return (
-        <div className="border shadow-xl hover:border-yellow-500 flex flex-col bg-blend-overlay w-[310px]">
+        <div data-aos="flip-left" className="border shadow-xl hover:border-yellow-500 flex flex-col bg-blend-overlay w-[310px]">
             <img className="w-full h-56" src={image} alt="" />
             <div className="flex mt-4">
             <div className="bg-custom-yellow h-13 w-2  "></div>

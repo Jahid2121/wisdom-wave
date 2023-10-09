@@ -41,7 +41,6 @@ const Login = () => {
     }
     return (
         <div className='flex  justify-center mt-14 font-Lato'>
-
     
     <div className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
         <div className='flex justify-between'>

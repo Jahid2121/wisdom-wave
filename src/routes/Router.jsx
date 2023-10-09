@@ -7,8 +7,8 @@ import Register from "../pages/Register/Register";
 import PrivateRoutes from "./Private/PrivateRoutes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Events from "../pages/Events/Events";
-import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import About from "../pages/About/About";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <PrivateRoutes><Contact></Contact></PrivateRoutes>
+      },
+      {
+        path: "/about",
+        element: <About></About>
       },
 
       {
