@@ -20,7 +20,9 @@ export default {
         'custom-yellow': '#FFBE30',
         'custom-Pink': '#ff5f6a',
         'custom-Pink-light': '#ffd2c2',
-        'custom-orange-shade': '#ff8a48'
+        'custom-orange-shade': '#ff8a48',
+        'custom-primary': '#414040',
+        'custom-secondary': '#707070',
       }
     },
   },

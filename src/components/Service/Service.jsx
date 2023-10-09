@@ -12,7 +12,7 @@ const Service = ({service}) => {
             <div>
             <h3 className="font-bold pl-2 mb-2 text-xl text-left">{name}</h3>
             
-            <p className="text-left pl-2 font-medium text-custom-yellow">Tickets from: {price}</p>
+            <p className="text-left pl-2 font-medium text-custom-yellow">{price}</p>
             </div>
             </div>
             <p className="text-left pl-3 flex-grow">{ShortDescription}</p>

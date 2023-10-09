@@ -1,7 +1,6 @@
-import google from '../../assets/icons8-google-30.png'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../Login/Login.css'
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Navbar from '../../shared/Navbar/Navbar';
 import { AiOutlineGoogle } from "react-icons/ai";
@@ -45,7 +44,7 @@ const Login = () => {
     return (
      <>
       <Navbar/>
-        <div className='flex  justify-center mt-14 font-Lato'>
+        <div data-aos="zoom-in" className='flex  justify-center mt-14 font-Lato'>
     <div className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
         <div className='flex justify-between'>
         <h2 className='text-left text-4xl mt-8 ml-9 font-light'>Sign In</h2>

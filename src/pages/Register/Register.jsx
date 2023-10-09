@@ -54,7 +54,8 @@ const Register = () => {
         })
     }
     return (
-        <div className='register-bg lg:min-h-screen p-3' style={{minHeight: 'calc(100vh - 64px)'}}>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" className='register-bg lg:min-h-screen p-3' style={{minHeight: 'calc(100vh - 64px)'}}>
             <div className="card field-bg  flex-shrink-0 w-full max-w-sm mx-auto shadow-2xl bg-base-100">
         <h2 className='text-3xl   text-white font-bold '>Sign Up</h2>
       <form onSubmit={handleRegistration} className="card-body">
