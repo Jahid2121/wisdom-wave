@@ -1,8 +1,14 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import '../Register/Register.css'
 import { AuthContext } from '../../Provider/AuthProvider';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { updateProfile } from 'firebase/auth';
 const Register = () => {
     const {createUser} = useContext(AuthContext)
+    const [success, setSuccess] = useState('')
+    const [error, setError] = useState('')
+    const [ShowPassword, setShowPassword] = useState(false)
+    console.log(error);
 
 
     const handleRegistration = e => {
@@ -13,9 +19,24 @@ const Register = () => {
         const password = e.target.password.value
         console.log(displayName , email, password);
 
-        createUser(displayName,photoURL, email, password)
+        if(password.length < 6){
+          setError('password must be at least 6 characters')
+        return
+        }
+        else if(!/[A-Z]/.test(password)){
+          setError('Your password should have at least one Uppercase letter')
+          return
+        }
+
+
+        createUser( email, password)
         .then(result => {
             console.log(result.user);
+
+            updateProfile(result.user, {
+              displayName: displayName,
+              photoURL: photoURL
+            })
         })
         .catch(error => {
             console.error(error.message);
@@ -46,7 +67,14 @@ const Register = () => {
           <label className="label">
             <span className="label-text font-bold">Password</span>
           </label>
-          <input  type="password" name='password' placeholder="password" className="input bg-gray-100 text-gray-700 rounded-full" required />
+          <div className='flex static'>
+          <input   type={ShowPassword ? 'text' : "password"} name='password' placeholder="password" className="input bg-gray-100 text-gray-700 pr-14 rounded-full" required />
+          <span className='relative -ml-9 mt-4'  onClick={() => setShowPassword(!ShowPassword)}>
+            {
+              ShowPassword ? <FaEye />  : <FaEyeSlash/>
+            }
+          </span>
+          </div>
           
         </div>
         <div className="form-control mt-6">

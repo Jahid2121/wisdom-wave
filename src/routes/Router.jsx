@@ -6,6 +6,7 @@ import Speaker from "../pages/Speaker/Speaker";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import PrivateRoutes from "./Private/PrivateRoutes";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/service/:id",
-        element: <ServiceDetails></ServiceDetails>,
+        element: <PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
         loader: () => fetch('/services.json')
       },
     ],

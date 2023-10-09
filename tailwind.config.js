@@ -13,12 +13,14 @@ export default {
       backgroundColor: {
         'custom-yellow': '#FFBE30',
         'custom-Pink': '#ff5f6a',
-        'custom-Pink-light': '#ffd2c2'
+        'custom-Pink-light': '#ffd2c2',
+        'custom-orange-shade': '#ff8a48'
       },
       textColor: {
         'custom-yellow': '#FFBE30',
         'custom-Pink': '#ff5f6a',
-        'custom-Pink-light': '#ffd2c2'
+        'custom-Pink-light': '#ffd2c2',
+        'custom-orange-shade': '#ff8a48'
       }
     },
   },

@@ -20,6 +20,8 @@ const ServiceDetails = () => {
             <h3 className="text-4xl my-6 font-bold">About Our {name}</h3>
             <p className="text-left">{DetailedDescription}</p>
 
+            <div className="md:flex flex-col">
+            <div>
             <h3 className="text-4xl bg-custom-Pink my-4 font-medium text-center">Benefits</h3>
             <ul>
                 {
@@ -28,13 +30,17 @@ const ServiceDetails = () => {
                 }
                 
             </ul>
+            </div>
 
-            <h3 className="text-4xl my-4 font-medium bg-custom-Pink text-center">Process</h3>
+           <div>
+           <h3 className="text-4xl my-4 font-medium bg-custom-Pink text-center">Process</h3>
             <ol>
                 {
                     process?.map((singleProcess, idx) => <li key={idx}>{singleProcess}</li>)
                 }
             </ol>
+           </div>
+            </div>
 
             <h2 className="text-4xl my-4 font-medium text-center bg-custom-Pink">Client Testimonials</h2>
             <h3 className="text-3xl font-medium">{User}</h3>
