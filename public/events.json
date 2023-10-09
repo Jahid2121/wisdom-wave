@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "eventName": "Educational Technology Expo 2023",
+    "date": "2023-09-25",
+    "location": "Convention Center, Seattle",
+    "description": "Discover the latest educational technologies and digital tools. Attend workshops and seminars to enhance your teaching methods.",
+    "organizer": "WisdomWave Management ",
+    "image": "https://i.ibb.co/mq6vqz0/nik-73-k-Rzs9sqo-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "eventName": "Training and Development Summit 2023",
+    "date": "2023-10-12",
+    "location": "Sheraton Hotel, Boston",
+    "description": "A comprehensive training event for professionals. Gain practical skills, attend leadership sessions, and network with industry peers.",
+    "organizer": "WisdomWave Management ",
+    "image": "https://i.ibb.co/2n5VFQp/good-free-photos-YZsv-Ns2-GCPU-unsplash.jpg"
+  },
+  {
+    "id": 3,
+    "eventName": "STEM Education Symposium 2023",
+    "date": "2023-11-08",
+    "location": "Science Museum, San Diego",
+    "description": "Focused on Science, Technology, Engineering, and Mathematics (STEM) education. Explore innovative teaching methods and curriculum design.",
+    "organizer": "WisdomWave Management ",
+    "image": "https://i.ibb.co/zXbx7Cx/edwin-andrade-4-V1d-C-eo-Cwg-unsplash.jpg"
+  },
+  {
+    "id": 4,
+    "eventName": "Leadership Training Retreat 2024",
+    "date": "2024-01-15",
+    "location": "Mountain Resort, Aspen",
+    "description": "An immersive leadership training experience. Engage in team-building activities, leadership workshops, and outdoor adventures.",
+    "organizer": "WisdomWave Management ",
+    "image": "https://i.ibb.co/V3Hv9tp/alexandre-pellaes-6v-Ajp0psc-X0-unsplash.jpg"
+  }
+]

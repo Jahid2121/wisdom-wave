@@ -2,7 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/icons8-education-100.png'
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Result } from "postcss";
+
+
 const Navbar = ({services}) => {
   const {user, logOut} = useContext(AuthContext)
 
@@ -36,20 +37,14 @@ const Navbar = ({services}) => {
           
         </details>
       </li>
-      <li  className="mr-4 text-xl"><NavLink to="/blog" style={({ isActive }) => {
+      <li  className="mr-4 text-xl"><NavLink to="/events" style={({ isActive }) => {
     return {
       fontWeight: isActive ? "bold" : "",
       color: isActive ? "orange" : "",
       textDecoration: isActive ? "underline" : "",
     };
-  }}>Blog</NavLink></li>
-      <li className="mr-4 text-xl"><NavLink to="/speaker" style={({ isActive }) => {
-    return {
-      fontWeight: isActive ? "bold" : "",
-      color: isActive ? "orange" : "",
-      textDecoration: isActive ? "underline" : "",
-    };
-  }}>Speaker</NavLink></li>
+  }}>Events</NavLink></li>
+      
       <li className="mr-4 text-xl"><NavLink style={({ isActive, isPending }) => {
     return {
       fontWeight: isActive ? "bold" : "",
@@ -65,6 +60,8 @@ const Navbar = ({services}) => {
     };
   }}>About Us</NavLink></li>
     </>
+
+
     return (
         <div className="navbar bg-base-100">
   <div className="navbar-start">

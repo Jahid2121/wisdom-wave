@@ -1,13 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layout/Root";
 import Home from "../pages/Home/Home";
-import Blog from "../pages/Blog/Blog";
-import Speaker from "../pages/Speaker/Speaker";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoutes from "./Private/PrivateRoutes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Events from "../pages/Events/Events";
 
 const router = createBrowserRouter([
   {
@@ -31,13 +30,11 @@ const router = createBrowserRouter([
         loader: () => fetch('/services.json')
       },
       {
-        path: "/blog",
-        element: <Blog></Blog>
+        path: "/events",
+        element: <Events></Events>,
+        loader: () => fetch('/events.json')
       },
-      {
-        path: "/speaker",
-        element: <Speaker></Speaker>
-      },
+
       {
         path: "/service/:id",
         element: <PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,

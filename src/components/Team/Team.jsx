@@ -13,7 +13,7 @@ const Team = () => {
 
     return (
         <div>
-            <h2 className="text-8xl mb-8 text-custom-Pink">Meet Our Team</h2>
+            <h2 className="text-6xl mb-8 text-custom-Pink">Meet Our Team</h2>
             <Marquee   speed={300}>
                 {teamData.map(member => (
                    <Member key={member.id} member={member}></Member>
