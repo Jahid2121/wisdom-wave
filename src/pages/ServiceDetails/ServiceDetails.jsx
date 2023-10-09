@@ -14,7 +14,6 @@ const ServiceDetails = () => {
     process,
     testimonials,
     image,
-    price,
     DetailedDescription,
   } = service;
 
@@ -33,14 +32,14 @@ const ServiceDetails = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
             <div>
-              <img
+              <img data-aos="fade-left"
                 src={image}
                 alt={name}
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
 
-            <div>
+            <div data-aos="fade-right">
               <h2 className="text-xl sm:text-2xl text-custom-primary font-semibold mb-4">
                 About Our {name}
               </h2>
@@ -48,7 +47,8 @@ const ServiceDetails = () => {
             </div>
           </div>
 
-          <div className="mt-12">
+        <div className="flex gap-12">
+        <div className="mt-12">
             <h2 className="text-xl sm:text-2xl text-custom-primary font-semibold mb-4">
               Benefits
             </h2>
@@ -69,6 +69,7 @@ const ServiceDetails = () => {
               ))}
             </ol>
           </div>
+        </div>
         </div>
       </div>
 

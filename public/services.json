@@ -3,6 +3,7 @@
       "id": 1,
       "name": "Career Fairs",
       "image": "https://i.ibb.co/5RTPS24/teemu-paananen-bzdhc5b3-Bxs-unsplash.jpg",
+      "CustomerImg": "https://i.ibb.co/80VgFX2/janko-ferlic-G-jo31-ESu-RE-unsplash.jpg",
       "price": "Free",
       "ShortDescription": "Meet potential employers, attend workshops, and network at our career fair to enhance your job prospects.",
       "DetailedDescription": "Join our Career Fair to boost your job opportunities. Engage with a wide array of potential employers, participate in hands-on workshops to enhance your skills, and network with industry professionals. This event provides a unique platform to explore job openings and learn about different career paths. Register at example.com/career-fair-registration",
@@ -28,6 +29,7 @@
       "id": 2,
       "name": "Educational Conferences",
       "image": "https://i.ibb.co/Rh4j7BL/product-school-cd7i9v-YIye-Y-unsplash.jpg",
+      "CustomerImg": "https://i.ibb.co/3f5rwcc/itay-verchik-Ym-Q8-Trsie-E4-unsplash.jpg",
       "price": "$75 - $250",
       "ShortDescription": "Explore education trends, engage with educators, and attend insightful sessions at our conferences.",
       "DetailedDescription": "Participate in our Educational Conferences to delve into the latest trends in education. Connect with renowned educators, engage in thought-provoking panel discussions, and attend sessions that offer valuable insights into the evolving landscape of education. Whether you're an educator, student, or education enthusiast, this conference provides a rich learning experience.",
@@ -53,6 +55,7 @@
       "id": 3,
       "name": "Training Programs",
       "image": "https://i.ibb.co/j8nWcKx/matthew-osborn-w-MRIc-T86-SWU-unsplash.jpg",
+      "CustomerImg": "https://i.ibb.co/C5MJKdJ/bannon-morrissy-Rxi-AV5-LC-ww-unsplash.jpg",
       "price": "$100 - $300",
       "ShortDescription": "Advance your skills through specialized training programs with industry experts.",
       "DetailedDescription": "Enhance your skills and expertise through our intensive Training Programs. Led by industry experts, these programs offer hands-on workshops, in-depth training sessions, and valuable insights that will empower you in your career. Whether you're looking to upskill, switch careers, or stay updated with the latest industry practices, our Training Programs are tailored to meet your professional needs.",
@@ -78,6 +81,7 @@
       "id": 4,
       "name": "Photography Workshop",
       "image": "https://i.ibb.co/wz6kFFh/alif-ngoylung-jg-6-ARMia-PM-unsplash.jpg",
+      "CustomerImg": "https://i.ibb.co/t3gmpBW/sigmund-a19-OVaa2rz-A-unsplash.jpg",
       "price": "$80 - $250",
       "ShortDescription": "Master photography techniques through hands-on training and creative exploration.",
       "DetailedDescription": "Immerse yourself in the art of photography at our comprehensive Photography Workshop. Led by professional photographers, this workshop offers hands-on training, advanced photography techniques, and expert guidance on photo editing. Whether you're a beginner looking to grasp the basics or an experienced photographer aiming to refine your skills, this workshop provides a nurturing environment for creative exploration and skill development.",
@@ -103,6 +107,7 @@
       "id": 5,
       "name": "Workshops and Webinars",
       "image": "https://i.ibb.co/brTM6xG/chuttersnap-c-X2v-El-Q5a-Hk-unsplash.jpg",
+      "CustomerImg": "https://i.ibb.co/prfR7nj/ludovic-migneault-EZ4-TYg-XPNWk-unsplash.jpg",
       "price": "$50 - $200",
       "ShortDescription": "Participate in interactive workshops and webinars led by industry experts.",
       "DetailedDescription": "Engage in our interactive Workshops and Webinars conducted by experts in diverse fields. These sessions cover a wide range of topics, offering participants the opportunity to learn new skills, gain valuable insights, and interact with industry professionals. Whether you're interested in technology, business, arts, or personal development, our workshops and webinars cater to your interests and provide a platform for continuous learning.",
@@ -128,6 +133,7 @@
       "id": 6,
       "name": "Language Learning Webinar",
       "image": "https://i.ibb.co/HNRrLYb/kane-reinholdtsen-LETdkk7w-HQk-unsplash.jpg",
+      "CustomerImg": "https://i.ibb.co/3hftL04/harry-cunningham-EPi3-TRQc5-Z0-unsplash.jpg",
       "price": "Free",
       "ShortDescription": "Immerse in language learning through interactive sessions with native speakers.",
       "DetailedDescription": "Embark on a language learning journey with our Language Learning Webinar. Led by native speakers and language enthusiasts, this webinar offers interactive sessions, language immersion activities, and cultural insights. Whether you're a beginner learning a new language or an enthusiast looking to enhance your language skills, this webinar provides a dynamic and engaging environment to foster language proficiency and cultural understanding. Join us for an enriching experience that transcends traditional language learning methods.",
@@ -151,3 +157,9 @@
     }
   ]
   
+
+  
+
+
+
+
