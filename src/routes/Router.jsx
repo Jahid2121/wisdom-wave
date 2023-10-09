@@ -7,6 +7,8 @@ import Register from "../pages/Register/Register";
 import PrivateRoutes from "./Private/PrivateRoutes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Events from "../pages/Events/Events";
+import About from "../pages/About/About";
+import Contact from "../pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
         path: "/events",
         element: <Events></Events>,
         loader: () => fetch('/events.json')
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
       },
 
       {

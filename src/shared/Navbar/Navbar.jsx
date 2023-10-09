@@ -11,7 +11,7 @@ const Menus = ()  => {
     
     {
       links.map(link => <li key={link}>
-        <NavLink  style={({ isActive }) => {
+        <NavLink className="mr-4"  style={({ isActive }) => {
     return {
       fontWeight: isActive ? "bold" : "",
       color: isActive ? "orange" : "",
@@ -58,7 +58,7 @@ const Navbar = ({services}) => {
       </ul>
     </div>
     <img draggable={false} className="w-2/6" src={logo} alt="" /> 
-    <a className="font-bold  normal-case text-xl">Wisdom<span className="text-custom-Pink">Wave</span></a>
+    <a className="font-bold  normal-case text-3xl">Wisdom<span className="text-custom-Pink">Wave</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className=" menu-horizontal px-1">
