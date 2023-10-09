@@ -3,15 +3,25 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../Login/Login.css'
 import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import Navbar from '../../shared/Navbar/Navbar';
 const Login = () => {
+    <Navbar/>
   const location = useLocation()
       const navigate = useNavigate()
-  const {googleSignIn} = useContext(AuthContext)
+  const {googleSignIn, LogIn} = useContext(AuthContext)
     const handleSignIn = e => {
         e.preventDefault()
         const email = e.target.email.value
         const password = e.target.password.value
         console.log( email, password);
+
+        LogIn(email, password)
+        .then(result => {
+          console.log(result.user);
+        })
+        .catch(error => {
+          console.error(error);
+        })
     }
 
     const handleGoogleSignIn = () => {

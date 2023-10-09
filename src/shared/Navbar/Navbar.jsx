@@ -57,7 +57,7 @@ const Navbar = ({services}) => {
 
       </ul>
     </div>
-    <img draggable={false} className="w-2/6" src={logo} alt="" /> 
+    <img draggable={false} className="w-2/12" src={logo} alt="" /> 
     <a className="font-bold  normal-case text-3xl">Wisdom<span className="text-custom-Pink">Wave</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -66,10 +66,10 @@ const Navbar = ({services}) => {
     </ul>
   </div>
   {
-    user ?  <div className="dropdown dropdown-end">
+    user ?  <div className="dropdown  pl-36 dropdown-end">
     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-      <div className="w-10 rounded-full">
-        <img src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" />
+      <div className="w-10 rounded-full ">
+        <img className="" src="https://i.ibb.co/bbPmhgG/My-Profile-Pic.png" />
       </div>
     </label>
     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
